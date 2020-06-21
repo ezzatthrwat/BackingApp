@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="Step"
+            type="com.forudacity.backingapp.model.Step"/>
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="20dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/stepShortDesTextView"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@{Step.shortDescription}"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>

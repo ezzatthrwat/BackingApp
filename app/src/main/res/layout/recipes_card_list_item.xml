@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="recipes"
+            type="com.forudacity.backingapp.model.Recipes"/>
+    </data>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="10dp"
+        app:contentPadding="50dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:id="@+id/RecipesNameTextView"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="@{recipes.name}"
+            android:textColor="@color/colorPrimaryDark" />
+
+    </com.google.android.material.card.MaterialCardView>
+</layout>
